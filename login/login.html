@@ -13,7 +13,13 @@
     .second-box:hover{
     background-image: none; 
     }
+    .main-img{
+        position: relative;
+        z-index: 999;
+        border-radius: 50%;
+        width: 150px;
 
+    }
     /* .input-field img{
         position: absolute;
         z-index: 9999;
@@ -32,44 +38,53 @@
         position: relative;
     }
     */
+    .min-box{
+        margin: 20px 20px 20px 20px;
+    }
 
   </style>
 
 </head>
 <body>
-    <div class="wrapper  bg_image">
+    <div class="wrapper  ">
         <div class="container main">
             <div class="row">
-                <!-- <div class="col-md-6 side-image">
-                   
-                    <div class="input-field">
-                           
-                        <input type="password" class="input pass" id="password" required  >
-                        <img class="closing-eyes "src="images/monkey.gif" alt="">
-                        <label for="password" class="pass">Password</label>
+                <div class="col-md-6 side-image bg_image">
+
+                    <div class="min-box "  onmouseover='imgChange("images/monkey.gif")'>
+
+
                     </div>
+                   
+                
                     
-                </div> -->
+                </div>
 
 
-                <div class="col-lg-12 right " >
+                <div class="col-md-6  right " >
                      <div class="input-box ">
-                        <header  onmouseover='imgChange("images/images.png")'>Create account</header>
-                        <div class="input-field"  onmouseover='imgChange("images/rainbow.gif")'>
+                        <header  onmouseover='imgChange("images/create.gif")'>Create account</header>
+                        
+                        <div class="input-field bg_image main-img"  onmouseover='imgChange("images/monkey.gif")' >
+                            
+                        </div>
+                       
+
+                        <div class="input-field"  onmouseover='imgChange("images/email2.gif")'>
                             <input type="text" class="input" id="email" required autocomplete="off">
                             <label for="email">Email</label>
                         </div>
-                        <div class="input-field " onmouseover='imgChange("images/monkey.gif")'>
+                        <div class="input-field " onmouseover='imgChange("images/password.gif")'>
                            
                             <input type="password" class="input pass" id="password" required  >
                             <label for="password" class="pass">Password</label>
                             
                         </div>
-                        <div class="input-field">
+                        <div class="input-field"  onmouseover='imgChange("images/sign-in.gif")'>
                             <input type="submit" class="submit" value="Sign Up">
                             
                         </div>
-                        <div class="signin">
+                        <div class="signin"  onmouseover='imgChange("images/images.png")'>
                             <span>Already have an account? <a href="#">Log in here</a></span>
                         </div>
                      </div>
